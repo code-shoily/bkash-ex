@@ -2,6 +2,11 @@ defmodule BKashEx.Checkout.Credentials do
   use GenServer
   alias __MODULE__
 
+  @type authorization_header_type :: %{
+          authorization: String.t(),
+          x_app_key: String.t()
+        }
+
   defp read_from_file() do
     with {:ok, body} <- File.read(Application.get_env(:bkash_ex, :bkash_env_file)),
          {:ok, json} <- Poison.decode(body),

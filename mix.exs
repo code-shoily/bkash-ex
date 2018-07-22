@@ -23,6 +23,7 @@ defmodule BKashEx.MixProject do
   defp deps do
     [
       {:poison, "~> 3.1"},
+      {:httpoison, "~> 1.0"},
       {:credo, "~> 0.9.1", only: [:dev, :test], runtime: false},
       {:ex_doc, "~> 0.18.0", only: :dev, runtime: false},
       {:cowboy, "~> 2.0"},
