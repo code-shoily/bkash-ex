@@ -1,8 +1,8 @@
-defmodule BkashExTest do
+defmodule BKashExTest do
   use ExUnit.Case
-  doctest BkashEx
+  doctest BKashEx
 
   test "greets the world" do
-    assert BkashEx.hello() == :world
+    assert BKashEx.hello() == :world
   end
 end

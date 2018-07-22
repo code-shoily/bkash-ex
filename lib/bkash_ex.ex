@@ -1,6 +1,6 @@
-defmodule BkashEx do
+defmodule BKashEx do
   @moduledoc """
-  Documentation for BkashEx.
+  Documentation for BKashEx.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule BkashEx do
 
   ## Examples
 
-      iex> BkashEx.hello
+      iex> BKashEx.hello
       :world
 
   """

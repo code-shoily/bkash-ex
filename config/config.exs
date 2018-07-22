@@ -2,13 +2,14 @@
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
+config :bkash_ex, :bkash_env_file, ".bkash.env.json"
 # config(:bkash_ex, :checkout_credentials, %{
-#   app_key: "APP_ID",
-#   app_secret: "APP_SECRET",
-#   username: "USERNAME",
-#   password: "PASSWORD",
-#   url: "URL",
-#   version: "VERSION"
+#   "app_key" => "APP_ID",
+#   "app_secret" => "APP_SECRET",
+#   "username" => "USERNAME",
+#   "password" => "PASSWORD",
+#   "url" => "URL",
+#   "version" => "VERSION"
 # })
 
 # This configuration is loaded before any dependency and is restricted

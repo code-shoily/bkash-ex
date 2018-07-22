@@ -1,4 +1,4 @@
-cred.json
+.bkash.env.json
 .elixir_ls
 # The directory Mix will write compiled artifacts to.
 /_build/
@@ -22,5 +22,5 @@ erl_crash.dump
 *.ez
 
 # Ignore package tarball (built via "mix hex.build").
-bkash_graphql-*.tar
+bkash_ex-*.tar
 
