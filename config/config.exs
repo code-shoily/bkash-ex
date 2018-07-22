@@ -2,6 +2,15 @@
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
+# config(:bkash_graphql, :checkout_credentials, %{
+#   app_key: "APP_ID",
+#   app_secret: "APP_SECRET",
+#   username: "USERNAME",
+#   password: "PASSWORD",
+#   url: "URL",
+#   version: "VERSION"
+# })
+
 # This configuration is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this
 # file won't be loaded nor affect the parent project. For this reason,
