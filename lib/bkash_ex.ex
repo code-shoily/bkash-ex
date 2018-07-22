@@ -1,6 +1,6 @@
-defmodule BkashGraphql do
+defmodule BkashEx do
   @moduledoc """
-  Documentation for BkashGraphql.
+  Documentation for BkashEx.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule BkashGraphql do
 
   ## Examples
 
-      iex> BkashGraphql.hello
+      iex> BkashEx.hello
       :world
 
   """

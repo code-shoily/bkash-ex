@@ -2,7 +2,7 @@
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
-# config(:bkash_graphql, :checkout_credentials, %{
+# config(:bkash_ex, :checkout_credentials, %{
 #   app_key: "APP_ID",
 #   app_secret: "APP_SECRET",
 #   username: "USERNAME",
@@ -19,11 +19,11 @@ use Mix.Config
 
 # You can configure your application as:
 #
-#     config :bkash_graphql, key: :value
+#     config :bkash_ex, key: :value
 #
 # and access this configuration in your application as:
 #
-#     Application.get_env(:bkash_graphql, :key)
+#     Application.get_env(:bkash_ex, :key)
 #
 # You can also configure a 3rd-party app:
 #
