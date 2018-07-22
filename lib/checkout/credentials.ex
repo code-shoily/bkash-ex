@@ -1,4 +1,7 @@
 defmodule BKashEx.Checkout.Credentials do
+  @moduledoc """
+  Stores all the credential information for checkout.
+  """
   use GenServer
   alias __MODULE__
 
@@ -13,6 +16,9 @@ defmodule BKashEx.Checkout.Credentials do
          do: {:ok, json}
   end
 
+  @doc """
+  Read credential information, either from env or from `.bkash.env.json`
+  """
   def read() do
     case credentials = Application.get_env(:bkash_ex, :checkout_credentials) do
       nil -> read_from_file()
@@ -20,13 +26,44 @@ defmodule BKashEx.Checkout.Credentials do
     end
   end
 
+  @doc """
+  Returns the entire data as Elixir map
+  """
   def get_data(pid), do: GenServer.call(pid, {:get, :all})
+
+  @doc """
+  Returns username
+  """
   def get_username(pid), do: GenServer.call(pid, {:get, :username})
+
+  @doc """
+  Returns password
+  """
   def get_password(pid), do: GenServer.call(pid, {:get, :password})
+
+  @doc """
+  Returns app key
+  """
   def get_app_key(pid), do: GenServer.call(pid, {:get, :app_key})
+
+  @doc """
+  Returns app secret
+  """
   def get_app_secret(pid), do: GenServer.call(pid, {:get, :app_secret})
+
+  @doc """
+  Returns full URL
+  """
   def get_base_url(pid), do: GenServer.call(pid, {:get, :base_url})
+
+  @doc """
+  Returns API version
+  """
   def get_version(pid), do: GenServer.call(pid, {:get, :version})
+
+  @doc """
+  Returns username
+  """
   def get_url(pid), do: GenServer.call(pid, {:get, :url})
 
   def start_link(opts) do
