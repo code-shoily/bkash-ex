@@ -10,6 +10,9 @@ defmodule BKashEx.Checkout.Credentials do
           x_app_key: String.t()
         }
 
+  # ------------------------------------------
+  # PUBLIC API
+  # ------------------------------------------
   defp read_from_file() do
     with {:ok, body} <- File.read(Application.get_env(:bkash_ex, :bkash_env_file)),
          {:ok, json} <- Poison.decode(body),
@@ -70,6 +73,9 @@ defmodule BKashEx.Checkout.Credentials do
     GenServer.start_link(Credentials, :ok, opts)
   end
 
+  # ------------------------------------------
+  # SERVER API
+  # ------------------------------------------
   @impl GenServer
   def init(_) do
     read()
