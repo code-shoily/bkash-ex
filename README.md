@@ -1,6 +1,7 @@
 # BKashEx
 
-**TODO: Add description**
+**TODO: Add detailed information**
+An Elixir wrapper for bKash API. Read more about the API [here](https://developer.bka.sh/docs/product-overview).
 
 ## Installation
 
